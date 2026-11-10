@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr) ;
+   grid-template-rows: repeat(10, 1fr);
+   
+    position: relative;
+    background-color: aquamarine;
+    min-height: 100vh;
+}
+/* cabeçalho */
+header {
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-around;
+    
+    width: 90vw;
+    z-index: 1;
+    align-items: center;
+    position: absolute;
+}
+
+header>img{
+    width: 130px;
+    border-radius: 50px;
+    /* background-color: black; */
+}
+
+li {
+    display: flex;
+    justify-content: space-around;
+    font-size: 35px;
+    /* background-color: blue; */
+    width: 70%;
+}
+
+ul>a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'cinzel',serif;
+    font-weight: bold;
+}
+
+ul>a:hover{
+    color: #007235;
+    font-size: 46px;
+    font-weight: bolder;
+    
+}
+
+/* main */
+main{
+   background-color: white;
+   height: 100vh;
+    position: absolute;
+    top: 50;
+    z-index: 0;
+}
+
+ main>img{
+    
+    height: 600px;
+     width: 90vw;
+     border-radius: 10px;
+ }
