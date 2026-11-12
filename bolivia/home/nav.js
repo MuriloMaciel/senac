@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const lista = document.getElementById("lista");
 const cabecalho = document.getElementById("cabecalho");
 const bandeira = document.getElementById("bandeira");
@@ -42,3 +43,5 @@ bandeira.addEventListener("click", function () {
 
 ajustarMenuPorTela();
 window.addEventListener("resize", ajustarMenuPorTela);
+=======
+>>>>>>> 66dfc8702aec5a405369107750c34a33290eff76
