@@ -26,17 +26,24 @@ header {
     position: absolute;
 }
 
-header>button{
+
+
+header>img{
     width: 130px;
     border-radius: 50px;
-    background-color: rgba(255, 255, 255, 0);
-    border: none;
+    /* background-color: black; */ 
+    display: block;
 }
 
-header>button>#bandeira{
-    width: 130px;
-    border-radius: 50px;
-    /* background-color: black; */
+#bandeiraMobile{
+    display: none;
+    cursor: pointer; 
+  transition: transform 0.5s ease;
+}
+
+
+.girar{
+    transform: rotate(360deg);
 }
 /* LISTA TELAS GRANDES */
 header >#menu{
@@ -79,6 +86,8 @@ li>a {
     font-size: 2.5pc;
     list-style: none;
     text-align: center;
+
+   
 }
 
 #listaMobile>li>a{
@@ -89,7 +98,7 @@ main{
    background-color: white;
    height: 100vh;
     position: absolute;
-    top: 50;
+    
     z-index: 0;
 }
 
