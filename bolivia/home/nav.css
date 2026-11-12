@@ -9,7 +9,8 @@ body {
     display: grid;
     grid-template-columns: repeat(10, 1fr) ;
    grid-template-rows: repeat(10, 1fr);
-   
+   justify-items: center;
+   overflow-x: hidden;
     position: relative;
     background-color: aquamarine;
     min-height: 100vh;
@@ -19,41 +20,70 @@ header {
     display: flex;
     padding-top: 10px;
     justify-content: space-around;
-    
     width: 90vw;
     z-index: 1;
     align-items: center;
     position: absolute;
 }
 
-header>img{
+header>button{
+    width: 130px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+header>button>#bandeira{
     width: 130px;
     border-radius: 50px;
     /* background-color: black; */
 }
-
-li {
+/* LISTA TELAS GRANDES */
+header >#menu{
+    width: 5000px;
+}
+#lista {
     display: flex;
     justify-content: space-around;
     font-size: 35px;
+    list-style: none;
     /* background-color: blue; */
     width: 70%;
 }
 
-ul>a {
+li>a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-family: 'cinzel',serif;
     font-weight: bold;
 }
 
-ul>a:hover{
+#lista>li>a:hover{
     color: #007235;
     font-size: 46px;
     font-weight: bolder;
     
 }
 
+/* LSITA MOBILE */
+#containerListaMobile{
+    display: none;
+    background-color: rgb(255, 255, 255);
+    width: 89vw;
+    height: 38vh;
+}
+#listaMobile{
+    margin-top: 1pc;
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5pc;
+    list-style: none;
+    text-align: center;
+}
+
+#listaMobile>li>a{
+    color: black;
+}
 /* main */
 main{
    background-color: white;
