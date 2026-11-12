@@ -6,22 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="nav.css">
-    
+
 
 </head>
 
 <body>
-    <header>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Escudo_de_Bolivia.svg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original" alt="">
-           <li>
-                <ul><a href="">Pontos</a></ul>
-                <ul><a href="">Historia</a></ul>
-                <ul><a href="">Cultura</a></ul>
-           </li>
+    <header id="cabecalho">
+
+        <button onclick="bandeiraMenu()">
+            <img id="bandeira"
+                src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Escudo_de_Bolivia.svg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original"
+                alt="">
+        </button>
+
+        <ul id="lista">
+            <li><a href="">Pontos</a></li>
+            <li><a href="">Historia</a></li>
+            <li><a href="">Cultura</a></li>
+        </ul>
+        <div id="containerListaMobile">
+
+            <ul id="listaMobile">
+                <li><a href="">Pontos</a></li>
+                <li><a href="">Historia</a></li>
+                <li><a href="">Cultura</a></li>
+
+            </ul>
+
+        </div>
+
     </header>
 
     <main>
-        <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TNYulzFSFQhHAuCWOwYdrKlaTe_wha23XYOnrEM6qN8qTCLWiBJEDZW0p8ce-MGndmjrF05X4aUFjQHL7s9iYGMDBr4RRlyQNPiobWZzm--a71dH0WUIqukMyyVcMN03VsJvCGsNO1-FA=s680-w680-h510-rw" alt="">
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TNYulzFSFQhHAuCWOwYdrKlaTe_wha23XYOnrEM6qN8qTCLWiBJEDZW0p8ce-MGndmjrF05X4aUFjQHL7s9iYGMDBr4RRlyQNPiobWZzm--a71dH0WUIqukMyyVcMN03VsJvCGsNO1-FA=s680-w680-h510-rw"
+            alt="">
     </main>
     <script src="nav.js"></script>
 </body>
