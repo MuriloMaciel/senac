@@ -1,1 +1,1 @@
-let largurar = window.innerWidth
+const larguraViewport = window.innerWidth;
