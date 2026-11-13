@@ -33,13 +33,16 @@ header>img{
     border-radius: 50px;
     /* background-color: black; */ 
     display: block;
+
+    transition: transform 0.5s ease;
 }
 
-#bandeiraMobile{
+/* #bandeiraMobile{
     display: none;
+    width: 130px;
     cursor: pointer; 
   transition: transform 0.5s ease;
-}
+} */
 
 
 .girar{

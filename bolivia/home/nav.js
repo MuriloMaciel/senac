@@ -1,24 +1,26 @@
+// Pegando os elementos do html
 
 const lista = document.getElementById("lista");
 const cabecalho = document.getElementById("cabecalho");
 const bandeira = document.getElementById("bandeira");
 const liMobile = document.getElementById("containerListaMobile");
-const bandeiraMobile = document.getElementById("bandeiraMobile");
 
-// 1. Controla o que aparece de acordo com a largura da tela
+
+// Function para verificar o tamanho da tela
 function ajustarMenuPorTela() {
-    const larguraViewport = window.innerWidth;
+    
 
-    if (larguraViewport >= 768) {
-        bandeira.style.display = "";
+    if (window.innerWidth >= 768) {
         lista.style.display = "";
         cabecalho.style.justifyContent = "";
         cabecalho.style.flexDirection = "";
+        // removendo assim que a tela aumentar a class "girar" ao elemento bandeira
+        bandeira.classList.remove("girar"); 
 
 
-        if (liMobile) liMobile.style.display = "none";
+        // Escondendo a lista mobile
+        liMobile.style.display = "none";
     } else {
-        bandeira.style.display = "block";
         cabecalho.style.flexDirection = "column";
         cabecalho.style.justifyContent = "center";
         lista.style.display = "none";
@@ -26,18 +28,20 @@ function ajustarMenuPorTela() {
 }
 
 
+// Adicionando um evento click na bandeira
 bandeira.addEventListener("click", function () {
+    
+    // verificando novamente se o tamanho da pagina está menor que 768
+    if (window.innerWidth < 768) {
+        // Adicionando a class "girar" ao elemento bandeira
+        bandeira.classList.toggle("girar");
 
-    bandeira.classList.toggle("girar");
-    if (bandeiraMobile) {
-        bandeiraMobile.classList.toggle("girar");
-    }
-
-
-    if (liMobile.style.display === "none" || liMobile.style.display === "") {
-        liMobile.style.display = "block";
-    } else {
-        liMobile.style.display = "none";
+        // se o elemento lista mobile for "none" enquanto estiver clicando ele transforma em "block"
+        if (liMobile.style.display === "none") {
+            liMobile.style.display = "block";
+        } else {
+            liMobile.style.display = "none";
+        }
     }
 });
 
