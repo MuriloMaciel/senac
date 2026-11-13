@@ -75,9 +75,9 @@ li>a {
 /* LSITA MOBILE */
 #containerListaMobile{
     display: none;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.437);
     width: 89vw;
-    height: 38vh;
+    height: 30vh;
 }
 #listaMobile{
     margin-top: 1pc;
@@ -88,6 +88,12 @@ li>a {
     text-align: center;
 
    
+}
+#listaMobile>li>a:hover{
+    color: #007235;
+    font-size: 46px;
+    font-weight: bolder;
+    
 }
 
 #listaMobile>li>a{
@@ -107,4 +113,10 @@ main{
     height: 600px;
      width: 90vw;
      border-radius: 10px;
+ }
+
+ hr {
+    background-color: black;
+    border: none;
+    height: 1px;
  }
