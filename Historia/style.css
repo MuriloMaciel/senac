@@ -92,7 +92,122 @@ text-align: center;
 
 
 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    justify-items: center;
+    align-items: start;
+    overflow-x: hidden;
+    position: relative;
+    background-color: aquamarine;
+    min-height: 100vh;
+    padding-top: 0;
+}
+
+/* cabeçalho */
+header {
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-around;
+    width: 70vw;
+    z-index: 1;
+    align-items: center;
+    position: absolute;
+}
+
+
+
+header>div>img {
+    width: 115px;
+    border-radius: 50px;
+    /* background-color: black; */
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+.fundo {
+    background-color: rgba(255, 255, 255, 0.437);
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+
+}
+
+.girar {
+    transform: rotate(360deg);
+}
+
+/* LISTA TELAS GRANDES */
+header>#menu {
+    width: 5000px;
+}
+
+#lista {
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    list-style: none;
+    /* background-color: blue; */
+    width: 70%;
+}
+
+li>a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'cinzel', serif;
+    font-weight: bold;
+}
+
+#lista>li>a:hover {
+    color: #007235;
+    font-size: 35px;
+    font-weight: bolder;
+
+}
+
+/* LSITA MOBILE */
+#containerListaMobile {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.437);
+    z-index: 0;
+    width: 70vw;
+    height: 30vh;
+}
+
+#listaMobile {
+
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5pc;
+    list-style: none;
+    text-align: center;
+
+
+}
+
+#listaMobile>li>a:hover {
+    color: #007235;
+    font-size: 46px;
+    font-weight: bolder;
+
+}
+
+#listaMobile>li>a {
+    color: black;
+}
+
+/* main */
 
 
 
