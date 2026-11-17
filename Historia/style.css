@@ -17,8 +17,8 @@ p {
 }
 main {
     
-    background-color: rgb(255, 255, 255);
 
+    
     margin: auto;
     width: 70%;
    
@@ -134,7 +134,7 @@ header>div>img {
 
 .fundo {
     background-color: rgba(255, 255, 255, 0.437);
-    width: 70vw;
+    width: 700vw;
     display: flex;
     justify-content: center;
     overflow-x: hidden;
@@ -221,22 +221,20 @@ main{
     position: absolute;
     width: 70vw;
     z-index: 0;
-    border-top-left-radius: 50px;
-    border-top-right-radius:50px ;
-    box-shadow: 3px 2px 9px 1px #0000009c;
-
     display: flex;
     flex-direction: column;
+
     
 }
 
 
  main>img{
-    
-    height: 600px;
-     width: 70vw;
-     border-top-left-radius: 10px;
-    border-top-right-radius:10px ;
+    margin-top: 10px;
+    height: 500px;
+    width: 70vw;
+    border-radius: 50px;
+    box-shadow: 3px 2px 9px 1px #0000009c;
+
  }
 
  hr {
@@ -276,68 +274,42 @@ main{
 
 
 
-/* @media (max-width: 768px){
-.card1{
-display: flex;
-flex-direction: column;
-align-items: center;
-
-
-}
-
-
-
-
-.titulo {
-    text-align: center;
-    font-family: 'EB Garamond', serif;
-    font-size: 80px;
-}
-
-
-.card1>h1{
+@media (max-width: 768px){
+.card2 {
+    display: flex;
+    justify-content: center;
     margin-top: 10px;
-      font-family: "Cinzel", serif;
+
+}
+#textoP{
+    font-size: 10px;
+   
 }
 
-.card1>p {
-font-size: 10px;
-width: 1000px;
-margin-bottom: 50px;
-}
-
-
-.card1>img {
-    width: 500px;
-    align-items: center;
-}
-
-hr{ 
-    height: 2px;
+    main>img {
+    height: 400px;
     
-    width: 50%;
-    margin: auto;
-    border: none;
-    background-color: black;
+    
 }
-
-.card2{
-display: flex;
-flex-direction: column;
-align-items: center;
-
-
+main>.card2>img {
+    width: 400px;
 }
 
 .card2>h1{
-    margin-top: 10px;
-      font-family: "Cinzel", serif;
+    font-size: 30px;
+    text-align: center;
 }
 
-.card2>p {
-font-size: 20px;
-width: 1000px;
-margin-bottom: 50px;
+.card2>p{
+width: 90%;
+word-wrap: break-word;
 }
 
-} */
+ul>li{
+   
+   font-size: 10px;
+
+
+}
+
+}
