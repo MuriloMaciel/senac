@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 
 main{
-   background-color: white;
+   
    height: 100vh;
     position: absolute;
     width: 70vw;
     z-index: 0;
     border-top-left-radius: 50px;
     border-top-right-radius:50px ;
-    box-shadow: 3px 2px 9px 1px #0000009c;
+  
 
     display: flex;
     flex-direction: column;
@@ -18,10 +18,10 @@ main{
 
  main>img{
     
-    height: 600px;
+    height: 400px;
      width: 70vw;
-     border-top-left-radius: 10px;
-    border-top-right-radius:10px ;
+   border-radius: 50px;
+      box-shadow: 3px 2px 9px 1px #0000009c;
  }
 
  hr {
