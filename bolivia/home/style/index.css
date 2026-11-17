@@ -34,9 +34,16 @@ main{
 
  aside{
    display: flex;
+   width: 100vw;
    margin-top: 15vh;
  }
 
+
  .card{
    background-color: blue;
+ }
+
+ .card > img{
+   height: 250px;
+   width: 500px;
  }
