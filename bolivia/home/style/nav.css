@@ -85,6 +85,9 @@ li>a {
 
 }
 
+
+
+
 /* LSITA MOBILE */
 #containerListaMobile {
     display: none;
@@ -125,7 +128,7 @@ li>a {
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
 
 main{
 
@@ -138,15 +141,33 @@ main{
     
 }
 
+/* CARROSEL */
 
- main>img{
-    margin-top: 10px;
-    height: 400px;
-    width: 70vw;
-    border-radius: 50px;
-    box-shadow: 3px 2px 9px 1px #0000009c;
+.carousel {
+    display: flex;
+    width: 50vw;
+  width: 500px;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
 
- }
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    width: 50vw;
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-item img {
+  width: 100%;
+  display: block;
+}
+
 
  hr {
     background-color: black;

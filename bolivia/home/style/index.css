@@ -1,49 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 
-main{
-   
-   height: 100vh;
-    position: absolute;
-    width: 70vw;
-    z-index: 0;
-    border-top-left-radius: 50px;
-    border-top-right-radius:50px ;
-  
+* {
+  font-family: 'Cinzel';
+}
 
-    display: flex;
-    flex-direction: column;
-    
+body {
+  background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA1L3JtNjE0LWEtYmctMDQ1LWMtam9iMTYzMS5qcGc.jpg');
+
+}
+
+main {
+
+  height: 100vh;
+  position: absolute;
+  width: 70vw;
+  z-index: 0;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+
+
+  display: flex;
+  flex-direction: column;
+
 }
 
 
- main>img{
-    
-    height: 400px;
-     width: 70vw;
-   border-radius: 50px;
-      box-shadow: 3px 2px 9px 1px #0000009c;
- }
+main>img {
 
- hr {
-    background-color: black;
-    border: none;
-    height: 1px;
- }
+  height: 400px;
+  width: 70vw;
+  border-radius: 50px;
+  box-shadow: 3px 2px 9px 1px #0000009c;
+}
 
- /* ASSIDE */
+hr {
+  background-color: black;
+  border: none;
+  height: 1px;
+}
 
- aside{
-   display: flex;
-   width: 100vw;
-   margin-top: 15vh;
- }
+/* ASSIDE */
 
+aside {
+  /* background-color: black; */
 
- .card{
-   background-color: blue;
- }
+  display: flex;
+  justify-content: space-around;
+}
 
- .card > img{
-   height: 250px;
-   width: 500px;
- }
+.card {
+  border-radius: 15px;
+  width: 20vw;
+  background-color: white;
+  box-shadow: 3px 3px 5px #0000005e;
+}
+
+.card>img {
+  border-radius: 15px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  height: 13vw;
+  width: 20vw;
+}
+
+.texto {
+  flex-direction: column;
+  display: flex;
+  padding-left: 25px;
+  height: 11vh;
+}
+
+.texto>a {
+  text-decoration: none;
+  font-size: 150%;
+  font-style: bolder;
+  color: red;
+}
