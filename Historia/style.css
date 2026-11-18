@@ -75,8 +75,7 @@ margin-bottom: 50px;
 #ultxt {
     text-align: center;
     font-size: 20px;
-    width: 1000px;
-padding: 50px;
+   
 
 }
 
@@ -282,7 +281,8 @@ main{
 
 }
 #textoP{
-    font-size: 10px;
+    font-size: 20px;
+    margin-top: 20px;
    
 }
 
@@ -303,8 +303,8 @@ word-wrap: break-word;
 
 #ultxt>li{
    
-   font-size: 10px;
-   
+   font-size: 20px;
+   margin: auto;
 
 
 }
