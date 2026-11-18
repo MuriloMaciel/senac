@@ -55,7 +55,7 @@ aside {
   width: 20vw;
   background-color: white;
   box-shadow: 3px 3px 5px #0000005e;
-  height: 30vw;
+  height: 20vw;
  margin-left: 10px;
 }
 
@@ -74,6 +74,22 @@ aside {
   height: 11vh;
   
 }
+#butaoA{
+  width: 200px;
+  font-size: 150%;
+  font-style: bolder;
+  color: rgb(0, 0, 0);
+  background-image: linear-gradient(45deg, rgb(28, 236, 0), rgb(30, 133, 4));
+  border-radius: 10px;
+  border: 2px solid rgb(21, 83, 2);
+ 
+  margin: auto;
+}
+
+#butaoA:hover {
+    background-image: linear-gradient(45deg,rgb(30, 133, 4), rgb(28, 236, 0));
+
+}
 
 #butaoB {
 width: 200px;
@@ -86,6 +102,27 @@ width: 200px;
  
   margin: auto;
  
+
+}
+
+#butaoB:hover {
+    background-image: linear-gradient(45deg, rgb(215, 0, 0),rgb(113, 3, 3));
+}
+
+#butaoC {
+  width: 200px;
+  font-size: 150%;
+  font-style: bolder;
+  color: rgb(0, 0, 0);
+  background-image: linear-gradient(45deg, rgb(238, 223, 8), rgb(126, 114, 4));
+  border-radius: 10px;
+  border: 2px solid rgb(95, 94, 1);
+ 
+  margin: auto;
+}
+
+#butaoC:hover {
+    background-image: linear-gradient(45deg, rgb(126, 114, 4), rgb(238, 223, 8));
 
 }
 
