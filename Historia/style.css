@@ -132,7 +132,6 @@ header>div>img {
 }
 
 .fundo {
-    background-color: rgba(255, 255, 255, 0.437);
     width: 700vw;
     display: flex;
     justify-content: center;
