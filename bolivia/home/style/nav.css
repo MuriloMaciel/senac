@@ -16,7 +16,7 @@ body {
     align-items: start;
     overflow-x: hidden;
     position: relative;
-  
+
     min-height: 100vh;
     padding-top: 0;
 }
@@ -43,18 +43,7 @@ header>div>img {
     transition: transform 0.5s ease;
 }
 
-.fundo {
-    background-color: rgba(255, 255, 255, 0.437);
-    width: 700vw;
-    display: flex;
-    justify-content: center;
-    overflow-x: hidden;
 
-}
-
-.girar {
-    transform: rotate(360deg);
-}
 
 /* LISTA TELAS GRANDES */
 header>#menu {
@@ -75,7 +64,7 @@ li>a {
     color: rgb(255, 255, 255);
     font-family: 'cinzel', serif;
     font-weight: bold;
-       
+
 }
 
 #lista>li>a:hover {
@@ -94,8 +83,10 @@ li>a {
     background-color: rgba(255, 255, 255, 0.437);
     z-index: 0;
     width: 70vw;
-    height: 30vh;
-   scrollbar-width: none;
+    height: 35vh;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    scrollbar-width: none;
 }
 
 #listaMobile {
@@ -105,9 +96,25 @@ li>a {
     font-size: 2.5pc;
     list-style: none;
     text-align: center;
+    width: 100vw;
+    height: 35vh;
 
 
+}
 
+.fundo {
+    background-color: rgba(255, 255, 255, 0.437);
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+
+}
+
+.girar {
+    transform: rotate(360deg);
 }
 
 #listaMobile>li>a:hover {
@@ -120,8 +127,10 @@ li>a {
 
 #listaMobile>li>a {
     color: black;
-      
+
 }
+
+
 
 /* main */
 
@@ -130,7 +139,7 @@ li>a {
 
 
 
-main{
+main {
 
     position: absolute;
     width: 70vw;
@@ -138,7 +147,7 @@ main{
     display: flex;
     flex-direction: column;
 
-    
+
 }
 
 /* CARROSEL */
@@ -146,58 +155,42 @@ main{
 .carousel {
     display: flex;
     width: 50vw;
-  width: 500px;
-  overflow: hidden;
-  position: relative;
-  margin: auto;
+    width: 500px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
 }
 
 .carousel-inner {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
 .carousel-item {
     width: 50vw;
-  min-width: 100%;
-  box-sizing: border-box;
+    min-width: 100%;
+    box-sizing: border-box;
 }
 
 .carousel-item img {
-  width: 100%;
-  display: block;
+    width: 100%;
+    display: block;
 }
 
 
- hr {
+hr {
     background-color: black;
     border: none;
     height: 1px;
- }
+}
 
- /* ASSIDE */
+/* ASSIDE */
 
- aside{
-   display: flex;
-   margin-top: 15vh;
- }
+aside {
+    display: flex;
+    margin-top: 15vh;
+}
 
- .card{
-   background-color: blue;
- }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.card {
+    background-color: blue;
+}

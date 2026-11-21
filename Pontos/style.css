@@ -1,19 +1,188 @@
 
 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+body {
+    background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA1L3JtNjE0LWEtYmctMDQ1LWMtam9iMTYzMS5qcGc.jpg');
+    background-color: aquamarine;
+    
+    min-height: 100vh;
+}
 
+/* Main */
+main {
+    margin: auto;
+    width: 70vw;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+main > img {
+    margin-top: 10px;
+    height: 400px;
+    width: 70vw;
+    object-fit: cover;
+    border-radius: 50px;
+    box-shadow: 3px 2px 9px 1px #0000009c;
+}
 
+.titulo {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 70px;
+    margin: 20px 0;
+}
 
+/* Cards de Pontos Turísticos */
+.card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 
+.card2 > img,
+.img {
+    width: 900px;
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    margin-top: 15px;
+}
 
+.card2 > h1 {
+    margin-top: 20px;
+    font-family: 'Cinzel', serif;
+    font-size: 50px;
+    text-align: center;
+}
 
+p {
+    text-align: center;
+}
 
+.card2 > p {
+    font-size: 20px;
+    width: 1000px;
+    max-width: 95%;
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
 
+/* Listas dentro dos cards */
+#ultxt,
+.card2 > ul {
+    text-align: center;
+    font-size: 20px;
+    list-style-position: inside;
+    width: 1000px;
+    max-width: 95%;
+    margin: 20px 0 50px 0;
+    line-height: 1.6;
+}
 
+#ultxt > li,
+.card2 > ul > li {
+    margin-bottom: 15px;
+}
 
+#textoP {
+    color: #000019;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0;
+}
 
+hr {
+    height: 1px;
+    width: 50%;
+    margin: 20px auto;
+    border: none;
+    background-color: black;
+}
+
+/* Botão flutuante Home */
+.home {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home > a > img {
+    width: 60px;
+    border: 2px solid black;
+    border-radius: 10px;
+    bottom: 10px;
+    right: 10px;
+    position: fixed;
+    z-index: 10;
+    transition: transform 0.2s ease;
+}
+
+.home > a > img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsividade Mobile */
+@media screen and (max-width: 768px) {
+    main {
+        width: 92vw;
+    }
+
+    .titulo {
+        font-size: 40px;
+    }
+
+    .card2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    #textoP {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    main > .card2 > img,
+    .img {
+        width: 400px;
+        max-width: 95%;
+    }
+
+    .card2 > h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .card2 > p {
+        width: 90%;
+        font-size: 18px;
+        word-wrap: break-word;
+    }
+
+    #ultxt > li,
+    .card2 > ul > li {
+        font-size: 18px;
+        margin: 0 auto 12px auto;
+    }
+
+    .home > a > img {
+        width: 40px;
+        border: 2px solid black;
+        border-radius: 10px;
+        bottom: 10px;
+        right: 10px;
+        position: fixed;
+    }
+}
 
 
 

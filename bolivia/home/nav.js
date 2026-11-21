@@ -1,53 +1,56 @@
-// Pegando os elementos do html
-
+// Pegando os elementos do HTML
 const lista = document.getElementById("lista");
 const cabecalho = document.getElementById("cabecalho");
 const bandeira = document.getElementById("bandeira");
 const liMobile = document.getElementById("containerListaMobile");
-let containerImg = document.getElementById("containerImg")
+const containerImg = document.getElementById("containerImg");
 
+const BREAKPOINT_MOBILE = 768;
 
-// Function para verificar o tamanho da tela
-function ajustarMenuPorTela() {
-    
-
-    if (window.innerWidth >= 768) {
-        lista.style.display = "";
-        cabecalho.style.justifyContent = "";
-        cabecalho.style.flexDirection = "";
-        // removendo assim que a tela aumentar a class "girar" ao elemento bandeira
-        bandeira.classList.remove("girar"); 
-
-        containerImg.classList.remove("fundo")
-
-
-        // Escondendo a lista mobile
-        liMobile.style.display = "none";
-    } else {
-        cabecalho.style.flexDirection = "column";
-        cabecalho.style.justifyContent = "center";
-        lista.style.display = "none";
-    }
+function fecharMenuMobile() {
+  if (bandeira) bandeira.classList.remove("girar");
+  if (containerImg) containerImg.classList.remove("fundo");
+  if (liMobile) liMobile.style.display = "none";
 }
 
+// Função para verificar o tamanho da tela
+function ajustarMenuPorTela() {
+  const isDesktop = window.innerWidth >= BREAKPOINT_MOBILE;
 
-// Adicionando um evento click na bandeira
-bandeira.addEventListener("click", function () {
-    
-    // verificando novamente se o tamanho da pagina está menor que 768
-    if (window.innerWidth < 768) {
-        // Adicionando a class "girar" ao elemento bandeira
-        bandeira.classList.toggle("girar");
-        containerImg.classList.toggle("fundo");
-
-        // se o elemento lista mobile for "none" enquanto estiver clicando ele transforma em "block"
-        if (liMobile.style.display === "none") {
-            liMobile.style.display = "block";
-        } else {
-            liMobile.style.display = "none";
-        }
+  if (isDesktop) {
+    if (lista) lista.style.display = "";
+    if (cabecalho) {
+      cabecalho.style.justifyContent = "";
+      cabecalho.style.flexDirection = "";
     }
-});
+    fecharMenuMobile();
+  } else {
+    if (cabecalho) {
+      cabecalho.style.flexDirection = "column";
+      cabecalho.style.justifyContent = "center";
+    }
+    if (lista) lista.style.display = "none";
+    if (liMobile && !liMobile.style.display) {
+      liMobile.style.display = "none";
+    }
+  }
+}
+
+// Evento de clique na bandeira (menu mobile)
+if (bandeira) {
+  bandeira.addEventListener("click", function () {
+    if (window.innerWidth < BREAKPOINT_MOBILE) {
+      bandeira.classList.toggle("girar");
+      if (containerImg) containerImg.classList.toggle("fundo");
+
+      if (liMobile) {
+        const estaOculto =
+          getComputedStyle(liMobile).display === "none";
+        liMobile.style.display = estaOculto ? "flex" : "none";
+      }
+    }
+  });
+}
 
 ajustarMenuPorTela();
 window.addEventListener("resize", ajustarMenuPorTela);

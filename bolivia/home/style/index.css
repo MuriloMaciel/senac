@@ -47,7 +47,7 @@ aside {
   display: flex;
   justify-content: space-around;
 
-  
+
 }
 
 .card {
@@ -56,7 +56,7 @@ aside {
   background-color: white;
   box-shadow: 3px 3px 5px #0000005e;
   height: 20vw;
- margin-left: 10px;
+  margin-left: 10px;
 }
 
 .card>img {
@@ -72,9 +72,10 @@ aside {
   display: flex;
   padding-left: 25px;
   height: 11vh;
-  
+
 }
-#butaoA{
+
+#butaoA {
   width: 200px;
   font-size: 150%;
   font-style: bolder;
@@ -82,31 +83,31 @@ aside {
   background-image: linear-gradient(45deg, rgb(28, 236, 0), rgb(30, 133, 4));
   border-radius: 10px;
   border: 2px solid rgb(21, 83, 2);
- 
+
   margin: auto;
 }
 
 #butaoA:hover {
-    background-image: linear-gradient(45deg,rgb(30, 133, 4), rgb(28, 236, 0));
+  background-image: linear-gradient(45deg, rgb(30, 133, 4), rgb(28, 236, 0));
 
 }
 
 #butaoB {
-width: 200px;
+  width: 200px;
   font-size: 150%;
   font-style: bolder;
   color: rgb(0, 0, 0);
   background-image: linear-gradient(45deg, rgb(113, 3, 3), rgb(215, 0, 0));
   border-radius: 10px;
   border: 2px solid red;
- 
+
   margin: auto;
- 
+
 
 }
 
 #butaoB:hover {
-    background-image: linear-gradient(45deg, rgb(215, 0, 0),rgb(113, 3, 3));
+  background-image: linear-gradient(45deg, rgb(215, 0, 0), rgb(113, 3, 3));
 }
 
 #butaoC {
@@ -117,77 +118,82 @@ width: 200px;
   background-image: linear-gradient(45deg, rgb(238, 223, 8), rgb(126, 114, 4));
   border-radius: 10px;
   border: 2px solid rgb(95, 94, 1);
- 
+
   margin: auto;
 }
 
 #butaoC:hover {
-    background-image: linear-gradient(45deg, rgb(126, 114, 4), rgb(238, 223, 8));
+  background-image: linear-gradient(45deg, rgb(126, 114, 4), rgb(238, 223, 8));
 
 }
 
- .home {
-        display: flex;
-        justify-content: flex-end;
-    
-    }
-    .home>a>img {
-       width: 60px;
-      border: 2px solid black;
-
-border-radius: 10px;
-bottom: 10px; right: 10px;
-position: fixed;
-    }
-   @media screen and (max-width: 768px) {
-        .home>a>img {
-       width: 40px;
-      border: 2px solid black;
-
-border-radius: 10px;
-bottom: 10px; right: 10px;
-position: fixed;
-    }
-
-.card {
+.home {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  border-radius: 15px;
-  width: 100vw;
-  background-color: white;
-  box-shadow: 3px 3px 5px #0000005e;
-  height: 50vw;
+  justify-content: flex-end;
 
- font-size: 20px;
 }
 
-.card>img {
-  border-radius: 15px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  height: 20vw;
-  width: 35vw;
+.home>a>img {
+  width: 60px;
+  border: 2px solid black;
+
+  border-radius: 10px;
+  bottom: 10px;
+  right: 10px;
+  position: fixed;
 }
 
-#butaoA{
- width: 100px;
-  font-size: 15px;
+@media screen and (max-width: 768px) {
+  .home>a>img {
+    width: 40px;
+    border: 2px solid black;
+
+    border-radius: 10px;
+    bottom: 10px;
+    right: 10px;
+    position: fixed;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    width: 100vw;
+    background-color: white;
+    box-shadow: 3px 3px 5px #0000005e;
+    height: 50vw;
+
+    font-size: 20px;
+  }
+
+  .card>img {
+    border-radius: 15px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    height: 20vw;
+    width: 35vw;
+  }
+
+  #butaoA {
+    width: 100px;
+    font-size: 15px;
+  }
+
+  #butaoB {
+    width: 100px;
+    font-size: 15px;
+  }
+
+  #butaoC {
+    width: 100px;
+    font-size: 15px;
+  }
+
 }
 
-#butaoB {
- width: 100px;
-  font-size: 15px;
-}
- #butaoC {
- width: 100px;
- font-size: 15px;
- }
 
-   }
-
-
-.carrosel { 
+.carrosel {
   max-width: 600px;
   margin: auto;
 }
@@ -200,23 +206,23 @@ position: fixed;
 
 
 .slide {
-position: relative
-  
+  position: relative
 }
 
 .ativo {
   display: block;
-  
+
 }
 
 .slides {
- 
+
   display: flex;
 
 }
 
 
-.anterior, .proximo {
+.anterior,
+.proximo {
   position: absolute;
   top: 50%;
 

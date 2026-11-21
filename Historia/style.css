@@ -8,35 +8,33 @@
 
 body {
     background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA1L3JtNjE0LWEtYmctMDQ1LWMtam9iMTYzMS5qcGc.jpg');
-
-
-
 }
+
 p {
     text-align: center;
 }
-main {
-    
 
-    
+main {
+
+
+
     margin: auto;
     width: 70%;
-   
+
     background-size: cover;
 }
 
 
-.card2{
-display: flex;
-flex-direction: column;
-align-items: center;
+.card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 
 }
 
 img {
     width: 900px;
- 
 }
 
 
@@ -49,9 +47,9 @@ img {
 
 
 
-hr{ 
+hr {
     height: 2px;
-   
+
     width: 50%;
     margin: auto;
     border: none;
@@ -60,35 +58,31 @@ hr{
 
 
 
-.card2>h1{
+.card2>h1 {
     margin-top: 10px;
-      font-family: "Cinzel", serif;
-      font-size: 50px;
+    font-family: "Cinzel", serif;
+    font-size: 50px;
 }
 
 .card2>p {
-font-size: 20px;
-width: 1000px;
-margin-bottom: 50px;
+    font-size: 20px;
+    width: 1000px;
+    margin-bottom: 50px;
 }
 
 #ultxt {
     text-align: center;
     font-size: 20px;
-   
+
 
 }
 
 
-.card2>li {
-        
-
-}
 
 #textoP {
-color: #000019;
-font-size: 30px;
-text-align: center;
+    color: #000019;
+    font-size: 30px;
+    text-align: center;
 }
 
 
@@ -110,102 +104,6 @@ body {
 }
 
 /* cabeçalho */
-header {
-    display: flex;
-    padding-top: 10px;
-    justify-content: space-around;
-    width: 70vw;
-    z-index: 1;
-    align-items: center;
-    position: absolute;
-}
-
-
-
-header>div>img {
-    width: 115px;
-    border-radius: 50px;
-    /* background-color: black; */
-    display: block;
-
-    transition: transform 0.5s ease;
-}
-
-.fundo {
-    width: 700vw;
-    display: flex;
-    justify-content: center;
-    overflow-x: hidden;
-
-}
-
-.girar {
-    transform: rotate(360deg);
-}
-
-/* LISTA TELAS GRANDES */
-header>#menu {
-    width: 5000px;
-}
-
-#lista {
-    display: flex;
-    justify-content: space-around;
-    font-size: 30px;
-    list-style: none;
-    /* background-color: blue; */
-    width: 70%;
-}
-
-li>a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-family: 'cinzel', serif;
-    font-weight: bold;
-       
-}
-
-#lista>li>a:hover {
-    color: #007235;
-    font-size: 35px;
-    font-weight: bolder;
-
-}
-
-/* LSITA MOBILE */
-#containerListaMobile {
-    display: none;
-    background-color: rgba(255, 255, 255, 0.437);
-    z-index: 0;
-    width: 70vw;
-    height: 30vh;
-   scrollbar-width: none;
-}
-
-#listaMobile {
-
-    display: flex;
-    flex-direction: column;
-    font-size: 2.5pc;
-    list-style: none;
-    text-align: center;
-
-
-
-}
-
-#listaMobile>li>a:hover {
-    color: #007235;
-    font-size: 46px;
-    font-weight: bolder;
-
-
-}
-
-#listaMobile>li>a {
-    color: black;
-      
-}
 
 /* main */
 
@@ -214,7 +112,7 @@ li>a {
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 
-main{
+main {
 
     position: absolute;
     width: 70vw;
@@ -222,114 +120,98 @@ main{
     display: flex;
     flex-direction: column;
 
-    
+
 }
 
 
- main>img{
+main>img {
     margin-top: 10px;
     height: 400px;
     width: 70vw;
     border-radius: 50px;
     box-shadow: 3px 2px 9px 1px #0000009c;
 
- }
+}
 
- hr {
+hr {
     background-color: black;
     border: none;
     height: 1px;
- }
+}
 
- /* ASSIDE */
+/* ASSIDE */
 
- aside{
-   display: flex;
-   margin-top: 15vh;
- }
-
- .card{
-   background-color: blue;
- }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 768px){
-.card2 {
+aside {
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
-
-}
-#textoP{
-    font-size: 20px;
-    margin-top: 20px;
-   
+    margin-top: 15vh;
 }
 
-  
-main>.card2>img {
-    width: 400px;
-}
 
-.card2>h1{
-    font-size: 30px;
-    text-align: center;
-}
+@media (max-width: 768px) {
 
-.card2>p{
-width: 90%;
-word-wrap: break-word;
-}
-
-#ultxt>li{
-   
-   font-size: 20px;
-   margin: auto;
-
-
-}
-
-}
-
- .home {
-        display: flex;
-        justify-content: flex-end;
     
+    .card2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+
     }
+
+    #textoP {
+        font-size: 20px;
+        margin-top: 20px;
+
+    }
+
+
+    main>.card2>img {
+        width: 400px;
+    }
+
+    .card2>h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .card2>p {
+        width: 90%;
+        word-wrap: break-word;
+    }
+
+    #ultxt>li {
+
+        font-size: 20px;
+        margin: auto;
+
+
+    }
+
+}
+
+.home {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.home>a>img {
+    width: 60px;
+    border: 2px solid black;
+
+    border-radius: 10px;
+    bottom: 10px;
+    right: 10px;
+    position: fixed;
+}
+
+@media screen and (max-width: 768px) {
     .home>a>img {
-       width: 60px;
-      border: 2px solid black;
+        width: 40px;
+        border: 2px solid black;
 
-border-radius: 10px;
-bottom: 10px; right: 10px;
-position: fixed;
+        border-radius: 10px;
+        bottom: 10px;
+        right: 10px;
+        position: fixed;
     }
-   @media screen and (max-width: 768px) {
-        .home>a>img {
-       width: 40px;
-      border: 2px solid black;
-
-border-radius: 10px;
-bottom: 10px; right: 10px;
-position: fixed;
-    }
-   }
+}
