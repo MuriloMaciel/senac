@@ -146,6 +146,11 @@ aside {
     margin-top: 15vh;
 }
 
+.card2>ul>li {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
 
 @media (max-width: 768px) {
 

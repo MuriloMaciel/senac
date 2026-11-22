@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 
-* {
-  font-family: 'Cinzel';
-}
+
 
 body {
   background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA1L3JtNjE0LWEtYmctMDQ1LWMtam9iMTYzMS5qcGc.jpg');
@@ -57,6 +55,7 @@ aside {
   box-shadow: 3px 3px 5px #0000005e;
   height: 20vw;
   margin-left: 10px;
+  font-family: 'Cinzel';
 }
 
 .card>img {
@@ -83,7 +82,7 @@ aside {
   background-image: linear-gradient(45deg, rgb(28, 236, 0), rgb(30, 133, 4));
   border-radius: 10px;
   border: 2px solid rgb(21, 83, 2);
-
+  font-family: 'Cinzel';
   margin: auto;
 }
 
@@ -100,7 +99,7 @@ aside {
   background-image: linear-gradient(45deg, rgb(113, 3, 3), rgb(215, 0, 0));
   border-radius: 10px;
   border: 2px solid red;
-
+  font-family: 'Cinzel';
   margin: auto;
 
 
@@ -118,7 +117,7 @@ aside {
   background-image: linear-gradient(45deg, rgb(238, 223, 8), rgb(126, 114, 4));
   border-radius: 10px;
   border: 2px solid rgb(95, 94, 1);
-
+  font-family: 'Cinzel';
   margin: auto;
 }
 
@@ -163,7 +162,7 @@ aside {
     background-color: white;
     box-shadow: 3px 3px 5px #0000005e;
     height: 50vw;
-
+margin: auto;
     font-size: 20px;
   }
 
@@ -172,22 +171,27 @@ aside {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     height: 20vw;
-    width: 35vw;
+    width: 40vw;
   }
 
   #butaoA {
     width: 100px;
     font-size: 15px;
+    margin-left: 25px;
   }
 
   #butaoB {
     width: 100px;
     font-size: 15px;
+   margin-left: 25px;
+
   }
 
   #butaoC {
     width: 100px;
     font-size: 15px;
+        margin-left: 25px;
+
   }
 
   aside {
@@ -204,7 +208,13 @@ aside {
   width:  200px;
 }
   
+p {
+  font-size: 20px;
+}
 
+.pontosP {
+  font-size: 17px;
+}
 }
 
 
