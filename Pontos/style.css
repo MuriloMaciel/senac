@@ -184,3 +184,203 @@ hr {
     }
 }
 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    justify-items: center;
+    align-items: start;
+    overflow-x: hidden;
+    position: relative;
+
+    min-height: 100vh;
+    padding-top: 0;
+}
+
+/* cabeçalho */
+header {
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-around;
+    width: 70vw;
+    z-index: 1;
+    align-items: center;
+    position: absolute;
+}
+
+
+
+header>div>img {
+    width: 115px;
+    border-radius: 50px;
+    /* background-color: black; */
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+
+
+/* LISTA TELAS GRANDES */
+header>#menu {
+    width: 5000px;
+}
+
+#lista {
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    list-style: none;
+    /* background-color: blue; */
+    width: 70%;
+}
+
+li>a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'cinzel', serif;
+    font-weight: bold;
+
+}
+
+#lista>li>a:hover {
+    color: #007235;
+    font-size: 35px;
+    font-weight: bolder;
+
+}
+
+
+
+
+/* LSITA MOBILE */
+#containerListaMobile {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.437);
+    z-index: 0;
+    width: 70vw;
+    height: 33vh;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    scrollbar-width: none;
+}
+
+#listaMobile {
+
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5pc;
+    list-style: none;
+    text-align: center;
+    width: 100vw;
+    height: 35vh;
+
+
+}
+
+.fundo {
+    background-color: rgba(255, 255, 255, 0.437);
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+
+}
+
+.girar {
+    transform: rotate(360deg);
+}
+
+#listaMobile>li>a:hover {
+    color: #007235;
+    font-size: 46px;
+    font-weight: bolder;
+
+
+}
+
+#listaMobile>li>a {
+    color: black;
+
+}
+
+
+
+/* main */
+
+
+
+
+
+
+main {
+
+    position: absolute;
+    width: 70vw;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+/* CARROSEL */
+
+.carousel {
+    display: flex;
+    width: 50vw;
+    width: 500px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    width: 50vw;
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+
+hr {
+    background-color: black;
+    border: none;
+    height: 1px;
+}
+
+/* ASSIDE */
+
+aside {
+    display: flex;
+    margin-top: 15vh;
+}
+
+.card {
+    background-color: blue;
+}
+
+
