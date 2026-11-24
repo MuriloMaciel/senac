@@ -27,4 +27,4 @@
 #
 #
 #
-### Versão brasileira: Herbert Richers
+
